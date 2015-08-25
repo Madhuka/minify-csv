@@ -24,3 +24,7 @@ Pure Python Wheels
 Install for windows
 -----------------
 ``python setup.py bdist_wininst``
+
+Installing
+-----------------
+``python setup.py install``
