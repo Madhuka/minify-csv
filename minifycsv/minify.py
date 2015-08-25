@@ -33,7 +33,7 @@ def grouping(csv_values, val_count):
             csv_value_ids.append(page)
             count_array.append(count - 1)
 
-    make_string_regex(csv_value_ids, count_array)
+    return make_string_regex(csv_value_ids, count_array)
 
 
 def make_stringline_regex(value_id, val_count):
@@ -54,5 +54,6 @@ def make_string_regex(list_s, list_count):
     for (my_index, vlaue_Id) in enumerate(list_s):
         count_list = list_count[my_index]
         out_str = out_str + make_stringline_regex(vlaue_Id, count_list) \
-            + ', '
-    print out_str[:-2]
+            + ', '   
+    out_str = out_str[:-2]
+    return out_str

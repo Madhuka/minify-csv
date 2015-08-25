@@ -5,4 +5,5 @@ import minify
 
 def getRegex(str):
     s_array = minify.spilter(str)
-    minify.grouping(s_array, 1)
+    out_msg =  minify.grouping(s_array, 1)
+    return out_msg
